@@ -1,37 +1,56 @@
+/* Layout */
 html {
     color: #f5f5f5;
     background-color: #333;
 }
 
 body {
-    margin: 0 auto;
-    max-width: 800px;
-    padding: 1em;
-
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.content {
+    margin: 5vh auto 0 auto;
+    max-width: 800px;
+    padding: 0.5em;
+}
+
+article {
+    margin-top: 10vh;
+}
+
 /* Typography */
-h1, h2, h3, p, blockquote {
+h1,
+h2,
+h3,
+p,
+blockquote {
     margin: 0 0 1em 0;
 }
 
-h1, h2, h3 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: 400;
+h1,
+h2,
+h3, 
+h4 {
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
     margin: 0 0 0.5em 0;
 }
 
 h1 {
+    font-size: 3em;
+}
+
+h1,
+h2 ,
+h3 {
     font-size: 2em;
 }
 
-h2 {
-    font-size: 1.5em;
-}
-
 h3 {
-    font-size: 1.17em;
+    font-size: 2em;
+    font-weight: bold;
+    border-bottom: 2px solid;
+
 }
 
 p {
@@ -47,27 +66,35 @@ blockquote {
     border-left: 3px solid #f5f5f5;
 }
 
-/* Header */
-header {
+/* Navigation */
+.main-nav {
     margin: 0 0 1em 0;
-
+    display: flex;
+    align-items: baseline;
 }
 
+.main-nav .logo {
+    margin: 0;
+    padding: 0;
+    width: 250px;
+}
 
-/* Navigation */
-nav ul {
+.main-nav nav {
+    margin-left: auto;
+}
+
+.main-nav nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-
-nav li {
+.main-nav nav li {
     display: inline;
     margin-right: 1em;
 }
 
-nav a {
+.main-nav nav a {
     color: #f5f5f5;
     text-decoration: none;
 
@@ -75,19 +102,108 @@ nav a {
     border-bottom: 2px solid transparent;
 }
 
-nav a:hover {
+.main-nav nav a:hover {
     border-color: #f5f5f5;
+}
+
+
+/* Hero */
+.hero {
+    width: 100%;
+    height: 70vh;
+
+    background-image: url("../media/image/bing_road.jpg");
+    background-size: cover;
+    background-position: top right;
+}
+
+.hero-outter {
+    background-color: #555555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: skew(22deg);
+
+    height: 100%;
+    width: 50%;
+    min-width: 500px;
+    margin-left: -10%;
+}
+
+.hero-inner {
+    transform: skew(-22deg);
+    max-width: 50%;
+}
+
+.hero-inner h1 {
+    font-size: 3em;
+}
+
+.hero-inner p {
+    font-size: 2em;
+}
+
+.hero-inner p span {
+    font-size: 0.5em;
+    color: #f5f5f5d6;
+
+    display: block;
 }
 
 /* Main */
 .caption {
-    font-size: 0.83em;
+    font-size: 0.75em;
     font-style: italic;
     display: block;
     padding: 0.5em
 }
 
-video, img {
+/* Order Form */
+.order-form {
+    padding: 1em;
+    /* margin: 0 auto; */
+    max-width: 450px;
+
+    background: #555;
+    border: 1px solid;
+    border-radius: 3px;
+}
+
+.order-form form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.order-form label {
+    margin-top: 0.5em;
+}
+
+.order-form label span {
+    display: block;
+}
+
+.order-form button {
+    margin-top: 0.5em;
     width: 100%;
-    margin-bottom: 1em;
+}
+
+.order-form fieldset {
+    width: 100%;
+}
+
+/* Article */
+article img {
+    max-width: 100%;
+    object-fit: contain;
+}
+
+/* Aside */
+aside {
+    margin-top: 10vh;
+}
+
+/* Footer */
+footer {
+    margin: 10vh auto 0 auto;
 }
