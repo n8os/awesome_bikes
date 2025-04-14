@@ -1,7 +1,7 @@
 /* Layout */
 html {
     color: #f5f5f5;
-    background-color: #333;
+    background-color: #151b23;
 }
 
 body {
@@ -118,7 +118,7 @@ blockquote {
 }
 
 .hero-outter {
-    background-color: #555555;
+    background-color: #3d444d;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -164,8 +164,8 @@ blockquote {
     /* margin: 0 auto; */
     max-width: 450px;
 
-    background: #555;
-    border: 1px solid;
+    background: rgb(13, 17, 23);
+    border: 1px solid #3d444d;
     border-radius: 3px;
 }
 
