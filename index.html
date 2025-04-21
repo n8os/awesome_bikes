@@ -20,7 +20,75 @@
         href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
         rel="stylesheet">
 
-    <script type="application/ld+json" src="index.jsonld"></script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Awesome Bikes Inc.",
+            "description": "The most awesome bicycles on the planet.",
+            "url": "https://n8os.github.io/awesome_bikes/",
+            "logo": "/media/image/bing_fat.jpg",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "123 Awesome Inc Dr.",
+                "addressLocality": "Lexington",
+                "addressRegion": "KY",
+                "addressCountry": "US"
+            },
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+1-859-859-8595",
+                "contactType": "Customer Service",
+                "areaServed": "US",
+                "availableLanguage": "English"
+            },
+            "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Bike Catalog",
+                "itemListElement": [
+                    {
+                        "@type": "Product",
+                        "name": "Awesome Road Bike",
+                        "description": "A high-performance road bike made of carbon fiber.",
+                        "image": "media/image/bing_road.jpg",
+                        "brand": "Awesome Bikes",
+                        "offers": {
+                            "@type": "Offer",
+                            "priceCurrency": "USD",
+                            "price": "4000.00",
+                            "availability": "https://schema.org/InStock"
+                        }
+                    },
+                    {
+                        "@type": "Product",
+                        "name": "Awesome Mountain Bike",
+                        "description": "A durable mountain bike for off-road adventures.",
+                        "image": "media/image/bing_mtb.jpg",
+                        "brand": "Awesome Bikes",
+                        "offers": {
+                            "@type": "Offer",
+                            "priceCurrency": "USD",
+                            "price": "2500.00",
+                            "availability": "https://schema.org/InStock"
+                        }
+                    },
+                    {
+                        "@type": "Product",
+                        "name": "Awesome Fat Bike",
+                        "description": "A titanium fat bike for extreme terrains.",
+                        "image": "media/image/bing_fat.jpg",
+                        "brand": "Awesome Bikes",
+                        "offers": {
+                            "@type": "Offer",
+                            "priceCurrency": "USD",
+                            "price": "3000.00",
+                            "availability": "https://schema.org/InStock"
+                        }
+                    }
+                ]
+            }
+        }
+    </script>
 </head>
 
 <body>
