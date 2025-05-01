@@ -23,24 +23,22 @@
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
-            "@type": "WebSite",
-            "name": "Awesome Bikes",
-            "description": "The most awesome bicycles on the planet.",
-            "url": "https://n8os.github.io/awesome_bikes/"
-        },
-        {
-            "@context": "https://schema.org",
             "@type": "WebPage",
             "name": "Order Awesome Bikes",
             "description": "Order an awesome bike from Awesome Bikes Inc.",
-            "url": "https://n8os.github.io/awesome_bikes/order.html"
-        },
-        {
-            "@context": "https://schema.org",
-            "@type": "WebPageElement",
-            "name": "Order Form",
-            "description": "Order form for Awesome Bikes Inc.",
-            "url": "https://n8os.github.io/awesome_bikes/order.html#order-form"
+            "url": "https://n8os.github.io/awesome_bikes/order.html",
+            "mainEntity": {
+                "@type": "WebPageElement",
+                "name": "Order Form",
+                "description": "Order form for Awesome Bikes Inc.",
+                "url": "https://n8os.github.io/awesome_bikes/order.html#order-form"
+            },
+            "potentialAction": {
+                "@type": "SubmitAction",
+                "target": "https://n8os.github.io/awesome_bikes/order.html#order-form",
+                "actionPlatform": "https://schema.org/WebApplication",
+                "name": "Submit Order"
+            }
         }
     </script>
 </head>
