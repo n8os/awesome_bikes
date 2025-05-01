@@ -23,6 +23,20 @@
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Awesome Bikes",
+            "description": "The most awesome bicycles on the planet.",
+            "url": "https://n8os.github.io/awesome_bikes/"
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Awesome Bikes",
+            "description": "The most awesome bicycles on the planet.",
+            "url": "https://n8os.github.io/awesome_bikes/"
+        },
+        {
+            "@context": "https://schema.org",
             "@type": "Organization",
             "name": "Awesome Bikes Inc.",
             "description": "The most awesome bicycles on the planet.",
@@ -55,7 +69,7 @@
                         "offers": {
                             "@type": "Offer",
                             "priceCurrency": "USD",
-                            "price": "4000.00",
+                            "price": "1000.00",
                             "availability": "https://schema.org/InStock"
                         }
                     },
@@ -68,7 +82,7 @@
                         "offers": {
                             "@type": "Offer",
                             "priceCurrency": "USD",
-                            "price": "2500.00",
+                            "price": "500.00",
                             "availability": "https://schema.org/InStock"
                         }
                     },
@@ -81,7 +95,7 @@
                         "offers": {
                             "@type": "Offer",
                             "priceCurrency": "USD",
-                            "price": "3000.00",
+                            "price": "600.00",
                             "availability": "https://schema.org/InStock"
                         }
                     }
@@ -93,12 +107,14 @@
 
 <body>
     <header class="main-nav">
-        <img class="logo" src="/media/image/placeholder.jpg" alt="Awesome Bikes Logo">
+        <img class="logo" src="media/image/awesome_bikes.png" alt="Awesome Bikes Logo">
         <nav>
             <ul>
-                <li><a href="#roady">Road</a></li>
-                <li><a href="#mtb">MTB</a></li>
-                <li><a href="#fatty">Fat</a></li>
+                <li><a href="/#roady">Road</a></li>
+                <li><a href="/#mtb">MTB</a></li>
+                <li><a href="/#fatty">Fat</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="order.html">Order</a></li>
             </ul>
         </nav>
     </header>
@@ -118,207 +134,141 @@
         <section class="content">
             <h2>Our Bikes</h2>
             <p>
-                Bacon ipsum dolor amet laboris sed lorem occaecat laborum. Pig swine capicola filet mignon elit, venison
-                minim dolore. Adipisicing burgdoggen proident, laboris officia buffalo spare ribs chicken duis consequat
-                salami laborum mollit culpa. Deserunt bacon minim eu sausage magna, non turkey.
+                Rip it, live it, love it. We have the bike for you. Awesome Bikes Inc. is the premier manufacturer of
+                high-performance bicycles. We offer a wide range of bikes for all types of riders, from road racers to
+                mountain bikers to fat bike enthusiasts. Our bikes are designed with the latest technology and materials
+                to ensure the best performance and durability.
             </p>
             <blockquote>
-                The most awesome bikes on the planet. Bacon ipsum dolor amet laboris sed lorem occaecat laborum.
-                <span class="caption">Pig swine</span>
+                <p>The most awesome bikes on the planet. For the most awesome people on the planet.</p>
+                <cite>Someone... probably</cite>
             </blockquote>
-            <p>
-                Strip steak brisket
-                proident, nisi ut velit pariatur lorem aliqua nostrud. Magna pork short ribs, pork chop aliqua bresaola
-                officia. Mollit laboris id, lorem anim ham hock magna duis porchetta minim cow.
-            </p>
 
-            <article>
+            <article class="bike" id="roady">
                 <header>
-                    <h3 id="roady">Awesome Road Bike</h3>
                     <figure>
                         <img src="media/image/bing_road.jpg" title="Awesome Road Bike" alt="Road Bike">
                         <figcaption>Image generated with AI using Bing Image Creator</figcaption>
                     </figure>
-                    <p>
-                        Turkey ball tip reprehenderit fatback pig beef ribs. Ground round proident alcatra pork chop
-                        irure
-                        bresaola. Culpa pariatur excepteur ground round, sirloin t-bone short ribs deserunt enim shank
-                        et
-                        ball tip. Veniam sunt dolor ham hock velit ut ut consectetur eiusmod beef ribs pig fugiat.
-                    </p>
+                    <h3>Awesome Road Bike</h3>
+                    <ul class="ideal-for">
+                        <li><strong>Racing/Trak</strong></li>
+                        <li><strong>Triathlons</strong></li>
+                        <li><strong>Commuting</strong></li>
+                    </ul>
                 </header>
                 <section>
                     <h4>Frame & Geometry</h4>
                     <ul>
-                        <li><strong>Material:</strong> Carbon Fiber</li>
-                        <li><strong>Sizes:</strong> 52, 54, 56cm</li>
-                        <li><strong>Head Tube Angle:</strong> 72 degrees</li>
-                        <li><strong>Seat Tube Angle:</strong> 73 degrees</li>
-                        <li><strong>Chainstay Length:</strong> 410mm</li>
-                        <li><strong>Wheelbase:</strong> 1000mm</li>
+                        <li><strong>Material: </strong>Carbon</li>
+                        <li><strong>Sizes: </strong>52, 54, 56cm</li>
+                        <li><strong>Head Tube Angle: </strong>72 degrees</li>
+                        <li><strong>Seat Tube Angle: </strong>73 degrees</li>
+                        <li><strong>Chainstay Length: </strong>410mm</li>
+                        <li><strong>Wheelbase: </strong>1000mm</li>
                     </ul>
                 </section>
                 <section>
                     <h4>Parts</h4>
                     <ul>
-                        <li><strong>Wheels:</strong> Alloy</li>
-                        <li><strong>Tires:</strong> Awesome 25mm</li>
-                        <li><strong>Drivetrain:</strong> SRAM Red</li>
-                        <li><strong>Brakes:</strong> SRAM Red</li>
-                        <li><strong>Handlebars:</strong> Awesome Carbon 42cm</li>
-                        <li><strong>Stem:</strong> Awesome Carbon 100mm</li>
-                        <li><strong>Saddle:</strong> Awesome Racing</li>
-                        <li><strong>Seatpost:</strong> Awesome Carbon</li>
+                        <li><strong>Wheels: </strong>Awesome Carbon 25mm</li>
+                        <li><strong>Tires: </strong>Awesome 28mm</li>
+                        <li><strong>Drivetrain: </strong>SPAM Egg</li>
+                        <li><strong>Brakes: </strong>SPAM Egg</li>
+                        <li><strong>Handlebars: </strong>Awesome Carbon 42cm</li>
+                        <li><strong>Stem: </strong>Awesome Carbon 100mm</li>
+                        <li><strong>Saddle: </strong>Awesome Racing</li>
+                        <li><strong>Seatpost: </strong>Awesome Carbon</li>
                     </ul>
+                    <setion class="call-to-action">
+                        <a class="order-cta" href="order.html">Order a Road Bike</a>
+                    </setion>
                 </section>
             </article>
 
-            <article>
+            <article class="bike" id="mtb">
                 <header>
-                    <h3 id="mtb">Awesome Mountain Bike</h3>
                     <figure>
                         <img src="media/image/bing_mtb.jpg" title="Awesome Mountain Bike" alt="Mountain Bike">
                         <figcaption>Image generated with AI using Bing Image Creator</figcaption>
                     </figure>
-                    <p>
-                        Aliqua alcatra jowl meatloaf ullamco sirloin laboris fatback ea ut enim. Beef ribs fugiat
-                        exercitation aliqua flank drumstick ex. Mollit pork dolor sint. Nisi irure tri-tip, chicken
-                        aliqua
-                        ham anim pork loin flank minim sausage. Magna reprehenderit porchetta adipisicing enim
-                        hamburger. Ut
-                    </p>
+                    <h3>Awesome Mountain Bike</h3>
+                    <ul class="ideal-for">
+                        <li><strong>Trails</strong></li>
+                        <li><strong>Off-Road</strong></li>
+                        <li><strong>Downhill</strong></li>
+                    </ul>
                 </header>
                 <section>
                     <h4>Frame & Geometry</h4>
                     <ul>
-                        <li><strong>Material:</strong> Carbon Fiber</li>
-                        <li><strong>Sizes:</strong> 52, 54, 56cm</li>
-                        <li><strong>Head Tube Angle:</strong> 72 degrees</li>
-                        <li><strong>Seat Tube Angle:</strong> 73 degrees</li>
-                        <li><strong>Chainstay Length:</strong> 410mm</li>
-                        <li><strong>Wheelbase:</strong> 1000mm</li>
+                        <li><strong>Material: </strong>Carbon Fiber</li>
+                        <li><strong>Sizes: </strong>52, 54, 56cm</li>
+                        <li><strong>Head Tube Angle: </strong>72 degrees</li>
+                        <li><strong>Seat Tube Angle: </strong>73 degrees</li>
+                        <li><strong>Chainstay Length: </strong>410mm</li>
+                        <li><strong>Wheelbase: </strong>1000mm</li>
                     </ul>
                 </section>
                 <section>
                     <h4>Parts</h4>
                     <ul>
-                        <li><strong>Wheels:</strong> Awesome Carbon 50mm</li>
-                        <li><strong>Tires:</strong> Awesome 25mm</li>
-                        <li><strong>Drivetrain:</strong> SRAM Red</li>
-                        <li><strong>Brakes:</strong> SRAM Red</li>
-                        <li><strong>Handlebars:</strong> Awesome Carbon 42cm</li>
-                        <li><strong>Stem:</strong> Awesome Carbon 100mm</li>
-                        <li><strong>Saddle:</strong> Awesome Racing</li>
-                        <li><strong>Seatpost:</strong> Awesome Carbon</li>
+                        <li><strong>Wheels: </strong>Awesome Carbon 32mm</li>
+                        <li><strong>Tires: </strong>Awesome 32mm</li>
+                        <li><strong>Drivetrain: </strong>SPAM Egg</li>
+                        <li><strong>Brakes: </strong>SPAM Egg</li>
+                        <li><strong>Handlebars: </strong>Awesome Carbon 42cm</li>
+                        <li><strong>Stem: </strong>Awesome Carbon 100mm</li>
+                        <li><strong>Saddle: </strong>Awesome Flat</li>
+                        <li><strong>Seatpost: </strong>Awesome Carbon</li>
                     </ul>
+                    <setion class="call-to-action">
+                        <a class="order-cta" href="order.html">Order a Mountain Bike</a>
+                    </setion>
                 </section>
             </article>
 
-            <article>
+            <article class="bike" id="fatty">
                 <header>
-                    <h3 id="fatty">Awesome Fat Bike</h3>
                     <figure>
                         <img src="media/image/bing_fat.jpg" title="Awesome Fat Bike" alt="Fat Bike">
                         <figcaption>Image generated with AI using Bing Image Creator</figcaption>
                     </figure>
-                    <p>
-                        Drumstick tail doner, ham hock adipisicing nisi proident irure. Venison pastrami consequat
-                        t-bone
-                        sed ut, consectetur cillum pork loin rump qui frankfurter in dolore. Incididunt ipsum sunt
-                        ullamco
-                        pork belly t-bone bresaola sed brisket ut beef shankle enim ex. Excepteur kevin id in. Consequat
-                        shank dolore, nisi elit tri-tip reprehenderit boudin cupim. Officia ut commodo, qui porchetta
-                        aliqua
-                        pork belly voluptate duis nulla aute t-bone rump. Adipisicing chuck eu tail pork chop aliqua est
-                        meatball cow pork proident brisket commodo filet mignon dolore.
-                    </p>
+                    <h3>Awesome Fat Bike</h3>
+                    <ul class="ideal-for">
+                        <li><strong>Snow/Sand</strong></li>
+                        <li><strong>Off-Road</strong></li>
+                        <li><strong>Trails</strong></li>
+                    </ul>
                 </header>
                 <section>
                     <h4>Frame & Geometry</h4>
                     <ul>
-                        <li><strong>Material:</strong> Titanium</li>
-                        <li><strong>Sizes:</strong> 52, 54, 56cm</li>
-                        <li><strong>Head Tube Angle:</strong> 72 degrees</li>
-                        <li><strong>Seat Tube Angle:</strong> 73 degrees</li>
-                        <li><strong>Chainstay Length:</strong> 410mm</li>
-                        <li><strong>Wheelbase:</strong> 1000mm</li>
+                        <li><strong>Material: </strong>Titanium</li>
+                        <li><strong>Sizes: </strong>52, 54, 56cm</li>
+                        <li><strong>Head Tube Angle: </strong>72 degrees</li>
+                        <li><strong>Seat Tube Angle: </strong>73 degrees</li>
+                        <li><strong>Chainstay Length: </strong>410mm</li>
+                        <li><strong>Wheelbase: </strong>1000mm</li>
                     </ul>
                 </section>
                 <section>
                     <h4>Parts</h4>
                     <ul>
-                        <li><strong>Wheels:</strong> Awesome Carbon 50mm</li>
-                        <li><strong>Tires:</strong> Awesome 25mm</li>
-                        <li><strong>Drivetrain:</strong> SRAM Red</li>
-                        <li><strong>Brakes:</strong> SRAM Red</li>
-                        <li><strong>Handlebars:</strong> Awesome Carbon 42cm</li>
-                        <li><strong>Stem:</strong> Awesome Carbon 100mm</li>
-                        <li><strong>Saddle:</strong> Awesome Racing</li>
-                        <li><strong>Seatpost:</strong> Awesome Carbon</li>
+                        <li><strong>Wheels: </strong>Awesome Carbon 50mm</li>
+                        <li><strong>Tires: </strong>Awesome 50mm</li>
+                        <li><strong>Drivetrain: </strong>SPAM Egg</li>
+                        <li><strong>Brakes: </strong>SPAM Egg</li>
+                        <li><strong>Handlebars: </strong>Awesome Carbon 42cm</li>
+                        <li><strong>Stem: </strong>Awesome Carbon 100mm</li>
+                        <li><strong>Saddle: </strong>Awesome Racing</li>
+                        <li><strong>Seatpost: </strong>Awesome Carbon</li>
                     </ul>
                 </section>
             </article>
-
-            <aside class="order-form">
-                <h2>Order Form</h2>
-
-                <p>
-                    Ready to place your awesome order?
-                    Please fill out the form below and we'll let you know when the bike is available.
-                </p>
-
-                <form action="#">
-                    <fieldset>
-                        <legend>Bike type</legend>
-                        <ul>
-                            <li>
-                                <label for="flagship_bike">
-                                    <input type="radio" id="flagship_bike" name="bike" value="flagship">
-                                    Flagship Awesome Bikes
-                                </label>
-                            </li>
-                            <li>
-                                <label for="road_bike">
-                                    <input type="radio" id="road_bike" name="bike" value="road">
-                                    Awesome Road Bike
-                                </label>
-                            </li>
-                            <li>
-                                <label for="mountain_bike">
-                                    <input type="radio" id="mountain_bike" name="bike" value="mountain">
-                                    Awesome Mountain Bike
-                                </label>
-                            </li>
-                            <li>
-                                <label for="gravel_bike">
-                                    <input type="radio" id="gravel_bike" name="bike" value="gravel">
-                                    Awesome Gravel Bike
-                                </label>
-                            </li>
-                            <li>
-                                <label for="fat_bike">
-                                    <input type="radio" id="fat_bike" name="bike" value="fat">
-                                    Awesome Fat Bike
-                                </label>
-                            </li>
-                        </ul>
-                    </fieldset>
-                    <label for="name">
-                        <span>Name: </span>
-                        <input type="text" id="name" name="name" required>
-                    </label>
-                    <label for="mail">
-                        <span>Email: </span>
-                        <input type="email" id="mail" name="user-mail" required>
-                    </label>
-                    <label for="phone">
-                        <span>Phone: </span>
-                        <input type="tel" id="phone" name="phone" required>
-                    </label>
-                    <button type="submit">Submit</button>
-                </form>
-            </aside>
-
+            <setion class="call-to-action">
+                <a class="order-cta" href="order.html">Order a Fat Bike</a>
+            </setion>
         </section>
     </main>
 
